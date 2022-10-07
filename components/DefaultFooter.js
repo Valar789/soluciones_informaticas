@@ -1,9 +1,8 @@
 import H5 from "@material-tailwind/react/Heading5";
 import LeadText from "@material-tailwind/react/LeadText";
 import Icon from "@material-tailwind/react/Icon";
-import whatsapp from "public/whatsapp.png";
-import Link from "next/link";
-import Image from "next/image";
+
+
 
 export default function DefaultFooter() {
   const popUp = () => {
@@ -175,14 +174,7 @@ export default function DefaultFooter() {
         </div>
       </footer>
       {/* whatsapp Popup */}
-      <Link href="https://wa.me/message/NU6LKHZRJY4UL1">
-        <a>
-          <Image
-            className="animationRight hover:scale-110 fixed bottom-4 right-4 h-14 w-14"
-            src={whatsapp}
-          />
-        </a>
-      </Link>
+     
     </>
   );
 }

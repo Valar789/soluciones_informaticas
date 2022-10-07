@@ -17,7 +17,7 @@ export default function WorkingSection() {
 
 
   return (
-    <section className="pb-20 bg-gray-200 -mt-32">
+    <section id="worksection" className="pb-20 bg-gray-200 -mt-32">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex flex-wrap relative z-10">
           <StatusCard img={asesoria} title="Asesoria">

@@ -6,6 +6,7 @@ import TeamSection from "components/landing/exitoSection";
 import ContactSection from "components/landing/ServicesSection";
 import Form from "components/landing/Form";
 import About from "components/landing/About";
+import ArrowUp from "components/ArrowUp";
 
 export default function Landing() {
   return (
@@ -22,6 +23,7 @@ export default function Landing() {
         <Form />
       </main>
       <DefaultFooter />
+      <ArrowUp/>
     </>
   );
 }

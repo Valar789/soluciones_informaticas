@@ -14,15 +14,16 @@ export default function DefaultNavbar() {
 
   return (
     <Navbar
-      className="navbarAnimation fixed top-0 left-0 right-0 bg-white z-50"
+      className="navbarAnimation  bg-trasnsparent"
       color="transparent "
       navbar
+
     >
       <NavbarContainer>
         <NavbarWrapper>
           <Link href="/">
             <a className="hover:text-teal-500" rel="noreferrer">
-              <H5 color="text-zinc" >LocalHost:</H5>
+              <H5 color="white" >LocalHost:</H5>
             </a>
           </Link>
           <NavbarToggler
@@ -36,23 +37,23 @@ export default function DefaultNavbar() {
             <div className="flex flex-col z-50 lg:flex-row lg:items-center">
               <Link href="#about">
                 <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-zinc-600 hover:text-teal-500">Sobre Nosotros</h6>
+                  <h6 className="text-white hover:text-teal-500">Sobre Nosotros</h6>
                 </a>
               </Link>
               <Link href="#exito">
                 <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-zinc-600 hover:text-teal-500">Proyectos Exitosos</h6>
+                  <h6 className="text-white hover:text-teal-500">Proyectos Exitosos</h6>
                 </a>
               </Link>
 
               <Link href="#servicios">
                 <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-zinc-600 hover:text-teal-500">Servicios</h6>
+                  <h6 className="text-white hover:text-teal-500">Servicios</h6>
                 </a>
               </Link>
               <Link href="#contacto">
                 <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-zinc-600 hover:text-teal-500">Contacto</h6>
+                  <h6 className="text-white hover:text-teal-500">Contacto</h6>
                 </a>
               </Link>
             </div>
