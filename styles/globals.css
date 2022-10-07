@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbarAnimation {
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+
+.titleAnimation {
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+
+.subTitleAnimation {
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+.animationLeft {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+.animationRight {
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.cardAnimationUp {
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+
+.iconAnimation {
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+.iconAnimation:hover {
+    animation: swing;
+    animation-duration: 1s;
+}
+
+.iconSocial {
+    transition: .5s;
+}
+
+.iconSocial:hover {
+    transform: scale(1.3)
+}
+
+.boxImagen {
+    height: 50%;
+    overflow: hidden;
+}
+
+.boxImagen .efectZoom {
+
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.boxImagen .efectZoom:hover {
+    transform: scale(1.1);
+}
