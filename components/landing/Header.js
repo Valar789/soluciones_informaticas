@@ -1,4 +1,4 @@
-import H2 from '@material-tailwind/react/Heading2';
+
 import LeadText from '@material-tailwind/react/LeadText';
 import { useRef } from 'react';
 
@@ -12,7 +12,7 @@ const header = useRef()
             <div className="container max-w-8xl relative mx-auto">
                 <div className="items-center flex flex-wrap">
                     <div className="titleAnimation w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
-                        <H2 color="white">Sitios Web Increíbles Para Tu Proyecto</H2>
+                        <h1 className='titleHeader font-bold text-white text-6xl' color="white">Sitios Web Increíbles Para Tu Proyecto</h1>
                         <div className="subTitleAnimation text-gray-200 ">
                             <LeadText color="gray-200">
                             Modernos y llamativos para exhibir tus productos y servicios en internet o impulsar tu idea

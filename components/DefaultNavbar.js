@@ -1,65 +1,48 @@
-import { useState } from "react";
-import Navbar from "@material-tailwind/react/Navbar";
-import NavbarContainer from "@material-tailwind/react/NavbarContainer";
-import NavbarWrapper from "@material-tailwind/react/NavbarWrapper";
-import NavbarToggler from "@material-tailwind/react/NavbarToggler";
-import NavbarCollapse from "@material-tailwind/react/NavbarCollapse";
-import Nav from "@material-tailwind/react/Nav";
-import H5 from "@material-tailwind/react/Heading5";
+import { useRef } from "react";
 
 import Link from "next/link";
 
 export default function DefaultNavbar() {
-  const [openNavbar, setOpenNavbar] = useState(false);
-
+  const topnav = useRef();
+  const navBar = useRef();
+  const toggleMenu = () => {
+    topnav.current.classList.toggle("responsive");
+    navBar.current.classList.toggle("bgnavBar");
+  };
   return (
-    <Navbar
-      className="navbarAnimation  bg-trasnsparent"
-      color="transparent "
-      navbar
+    <div ref={navBar} className="navBar flex justify-between" >
+      <div className="text-white font-semibold mx-4 mt-3 text-3xl float-left flex">
+        <h1 className="text-teal-500">Local</h1>Host
+      </div>
 
-    >
-      <NavbarContainer>
-        <NavbarWrapper>
-          <Link href="/">
-            <a className="hover:text-teal-500" rel="noreferrer">
-              <H5 color="white" >LocalHost:</H5>
-            </a>
-          </Link>
-          <NavbarToggler
-            onClick={() => setOpenNavbar(!openNavbar)}
-            color="white"
-          />
-        </NavbarWrapper>
+      <nav ref={topnav} className="topnav ">
+      <Link href="#about">
+        <a onClick={toggleMenu} className="" rel="noreferrer">
+          <h6 className="">Sobre Nosotros</h6>
+        </a>
+      </Link>
+      <Link href="#exito">
+        <a onClick={toggleMenu} className="" rel="noreferrer">
+          <h6 className="">Proyectos Exitosos</h6>
+        </a>
+      </Link>
 
-        <NavbarCollapse open={openNavbar}>
-          <Nav className="">
-            <div className="flex flex-col z-50 lg:flex-row lg:items-center">
-              <Link href="#about">
-                <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-white hover:text-teal-500">Sobre Nosotros</h6>
-                </a>
-              </Link>
-              <Link href="#exito">
-                <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-white hover:text-teal-500">Proyectos Exitosos</h6>
-                </a>
-              </Link>
+      <Link href="#servicios">
+        <a onClick={toggleMenu} className="" rel="noreferrer">
+          <h6 className="">Servicios</h6>
+        </a>
+      </Link>
+      <Link href="#contacto">
+        <a onClick={toggleMenu} className="" rel="noreferrer">
+          <h6 className="">Contacto</h6>
+        </a>
+      </Link>
 
-              <Link href="#servicios">
-                <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-white hover:text-teal-500">Servicios</h6>
-                </a>
-              </Link>
-              <Link href="#contacto">
-                <a className="mx-2" rel="noreferrer">
-                  <h6 className="text-white hover:text-teal-500">Contacto</h6>
-                </a>
-              </Link>
-            </div>
-          </Nav>
-        </NavbarCollapse>
-      </NavbarContainer>
-    </Navbar>
+      
+      </nav>
+      <a onClick={toggleMenu} className="iconMenu text-white right-4">
+        <i className="fa fa-bars"></i>
+      </a>
+    </div>
   );
 }

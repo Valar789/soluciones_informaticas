@@ -3,66 +3,174 @@
 @tailwind utilities;
 
 .navbarAnimation {
-    animation: fadeInDown;
-    animation-duration: 1s;
+  animation: fadeInDown;
+  animation-duration: 1s;
 }
 
 .titleAnimation {
-    animation: fadeInUp;
-    animation-duration: 1s;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 
 .subTitleAnimation {
-    animation: fadeInUp;
-    animation-duration: 1s;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
+
 .animationLeft {
-    animation: fadeInLeft;
-    animation-duration: 2s;
+  animation: fadeInLeft;
+  animation-duration: 2s;
 }
+
 .animationRight {
-    animation: fadeInRight;
-    animation-duration: 2s;
+  animation: fadeInRight;
+  animation-duration: 2s;
 }
 
 .cardAnimationUp {
-    animation: fadeInUp;
-    animation-duration: 1.5s;
+  animation: fadeInUp;
+  animation-duration: 1.5s;
 }
 
 .iconAnimation {
-    animation: pulse;
-    animation-duration: 1s;
+  animation: pulse;
+  animation-duration: 1s;
 }
 
 .iconAnimation:hover {
-    animation: swing;
-    animation-duration: 1s;
+  animation: swing;
+  animation-duration: 1s;
 }
 
 .iconSocial {
-    transition: .5s;
+  transition: .5s;
 }
 
 .iconSocial:hover {
-    transform: scale(1.3)
+  transform: scale(1.3)
 }
 
 .boxImagen {
-    height: 50%;
-    overflow: hidden;
+  height: 50%;
+  overflow: hidden;
 }
 
 .boxImagen .efectZoom {
 
-    transform: scale(1);
-    transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
 }
 
 .boxImagen .efectZoom:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.arrowDisplay{
+.arrowDisplay {
+  display: none;
+
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.iconMenu {
+  float: right;
+  display: none;
+  right: 4px;
+  top: 4px;
+}
+
+@media screen and (max-width:600px) {
+  .topnav a {
     display: none;
+  }
+  .navBar.bgnavBar{
+    display: flex;
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    background: linear-gradient(rgba(12, 13, 14, 0.8), rgba(12, 13, 14, 0.8))
+  
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .titleHeader{
+    font-size: 30px!important;
+    color: #fff;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a:hover {
+    background-color: teal;
+    color: #fff!important;
+  }
+
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+
+  .topnav.responsive {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 60px;
+    width: 100%;
+    position:fixed ;
+    background-color: white;
+    height: 80vh;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 16px 0px rgba(56, 36, 36, 0.55);
+    -moz-box-shadow: 0px 11px 16px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 11px 16px 0px rgba(0,0,0,0.55);
+  }
+
+  .iconMenu {
+    display: block;
+    position: fixed;
+    right: 4px;
+    top: 1.1rem;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: teal;
+  }
+
+
+
 }

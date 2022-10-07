@@ -10,7 +10,7 @@ export default function Form() {
     mensaje: "",
   });
 
-  console.log(mensaje);
+
 
   const captureValues = (e) => {
     setMensaje({
