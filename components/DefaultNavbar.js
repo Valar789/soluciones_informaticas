@@ -10,8 +10,6 @@ export default function DefaultNavbar() {
     const handleScroll = () => {
       const header = document.getElementById("header");
       const { y } = header.getBoundingClientRect();
-      console.log(y);
-
       y !== 0
         ? navBar.current.classList.add("bgNavbar")
         : navBar.current.classList.remove("bgNavbar");

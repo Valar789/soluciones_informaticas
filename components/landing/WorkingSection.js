@@ -43,11 +43,10 @@ export default function WorkingSection() {
               desarrolladores web con las habilidades para crear lo que tu sitio web necesite.
             </LeadText>
 
-            <div className="text-blue-gray-800 text-center inline-flex items-center justify-center rounded-full ">
+            <div className="boxImagen text-gray-800 text-center inline-flex items-center justify-center">
               <Image
-                className="rounded-md"
-                src={equipo}
-  
+                className="efectZoom rounded-md "
+                src={equipo}  
                 alt="asesoria"
                 raised="true"
               />

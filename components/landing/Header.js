@@ -15,7 +15,7 @@ const header = useRef()
                         <h1 className='titleHeader font-bold text-white text-6xl'>Sitios Web Increíbles</h1>
                         <div className="subTitleAnimation text-gray-200 ">
                             <LeadText color="gray-200">
-                            Modernos y llamativos para exhibir tus negocio.
+                            Modernos y llamativos para exhibir tu negocio.
                             </LeadText>
                         </div>
                     </div>
