@@ -14,7 +14,8 @@ module.exports = {
       backgroundImage: () => ({
         "login-background":
           "linear-gradient(rgba(0,0,0, 0.55), rgba(0,0,0, 0.55)), url('../public/aboutbg.jpg')",
-
+        "landing-background":
+          "linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('../public/header.jpg')",
         "profile-background":
           "linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('../public/bg2.jpg')",
       }),
