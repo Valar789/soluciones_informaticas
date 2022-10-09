@@ -8,14 +8,11 @@ import StatusCard from "components/landing/StatusCard";
 import Teamwork from "public/teamwork.jpeg";
 import Image from "next/image";
 import asesoria from "public/asesoria.png";
-import equipo from "public/equipo.png";
+import equipo from "public/equipo.jpg";
 import movil from "public/movil.png";
 import diseño from "public/diseño.png";
 
-
 export default function WorkingSection() {
-
-
   return (
     <section id="worksection" className="pb-20 bg-gray-200 -mt-32">
       <div className="container max-w-7xl mx-auto px-4">
@@ -36,43 +33,39 @@ export default function WorkingSection() {
           </StatusCard>
         </div>
 
-        <div className="flex flex-wrap items-center mt-32">
-          <div className="w-full md:w-5/12 px-4 mx-auto">
-            <div className="text-blue-gray-800 text-center inline-flex items-center justify-center w-24 h-24 mb-6 rounded-full ">
+        <div className="flex flex-wrap items-center text-center mt-32">
+          <div className="w-full md:w-5/12  mx-auto ">
+            
+            <H4 color="black" className="eventAnimation">
+              Equipo de desarrolladores</H4>
+            <LeadText color="blueGray " className='text-center'>
+              Obtén acceso instantáneo a un equipo de diseñadores visuales y
+              desarrolladores web con las habilidades para crear lo que tu sitio web necesite.
+            </LeadText>
+
+            <div className="text-blue-gray-800 text-center inline-flex items-center justify-center rounded-full ">
               <Image
-                className="iconAnimation"
+                className="rounded-md"
                 src={equipo}
+  
                 alt="asesoria"
                 raised="true"
               />
             </div>
-            <H4 color="teal" className="eventAnimation">
-              Equipo de desarrolladores al instante
-            </H4>
-            <LeadText color="blueGray">
-              Obtén acceso instantáneo a un equipo de diseñadores visuales y
-              desarrolladores web con las habilidades para crear cualquier cosa
-              que tu sitio web necesite.
-            </LeadText>
-            <LeadText color="blueGray">
-              Configuramos tu sitio web con nuestra mejor plataforma y servicios
-              para darle a tu negocio una base sólida.
-            </LeadText>
           </div>
 
-          <div
-
-            className="boxImagen w-full md:w-4/12  rounded-md px-4 mx-auto flex justify-center mt-24 lg:mt-0"
-          >
+          <div className="boxImagen w-full md:w-5/12  rounded-md px-4 mx-auto flex justify-center mt-24 lg:mt-0">
             <Card className="bg-white">
               <Image
                 className="efectZoom rounded-md "
+                height={450}
+                width={650}
                 alt="Card Image"
                 src={Teamwork}
                 raised="true"
               />
               <CardBody>
-                <H5 color="teal">Tu aprobación</H5>
+                <H5 color="black">Tu aprobación</H5>
                 <Paragraph color="blueGray">
                   Nuestros diseñadores profesionales crean un prototipo
                   personalizado de tu nuevo sitio web para que puedas

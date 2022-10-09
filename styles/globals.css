@@ -63,6 +63,7 @@
 
 .boxImagen .efectZoom:hover {
   transform: scale(1.1);
+  
 }
 
 .arrowDisplay {
@@ -87,14 +88,10 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-
 }
-
-/* Change the color of links on hover */
 .topnav a:hover {
+  background-color: teal;
 
-  color: white;
-  border-radius: 10px;
 }
 
 
@@ -124,15 +121,21 @@
 
 @media screen and (max-width: 600px) {
   .titleHeader{
-    font-size: 30px!important;
+    font-size: 40px!important;
     color: #fff;
   }
   .topnav a {
     display: none;
+    color: #000!important;
   }
   .topnav a:hover {
-    background-color: teal;
+
     color: #fff!important;
+    color: teal;
+  }
+  .titleLogo{
+    top: calc(-10px)!important;
+    font-size: 20px!important;
   }
 
 
@@ -140,7 +143,6 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-
   .topnav.responsive {
     align-items: center;
     display: flex;
@@ -160,8 +162,8 @@
   .iconMenu {
     display: block;
     position: fixed;
-    right: 4px;
-    top: 1.1rem;
+    right: 18px;
+    top: 10px;
   }
 
   .topnav.responsive a {
@@ -171,6 +173,8 @@
     color: teal;
   }
 
+}
 
-
+.bgNavbar{
+  background: linear-gradient(rgba(0, 8, 8, 0.8), rgba(0, 17, 19, 0.8));
 }

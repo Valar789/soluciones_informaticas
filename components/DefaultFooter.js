@@ -5,9 +5,7 @@ import Icon from "@material-tailwind/react/Icon";
 
 
 export default function DefaultFooter() {
-  const popUp = () => {
-    alert("hello");
-  };
+
   return (
     <>
       <footer className="relative bg-white pt-8 pb-6">
@@ -15,9 +13,7 @@ export default function DefaultFooter() {
           <div className="flex flex-wrap text-center lg:text-left pt-6">
             <div className="w-full lg:w-6/12 px-4">
               <H5 color="gray">Visita nuestras redes sociales</H5>
-              <div className="-mt-4">
-                <LeadText color="blueGray">Siguenos y comparte</LeadText>
-              </div>
+
               <div className="flex gap-2 mt-6 md:justify-start md:mb-0 mb-8 justify-center">
                 <a
                   href="https://www.facebook.com/CreativeTim"

@@ -23,7 +23,7 @@ export default function Landing() {
         <Form />
       </main>
       <DefaultFooter />
-      <ArrowUp/>
+      <ArrowUp />
     </>
   );
 }

@@ -33,9 +33,9 @@ export default function StatusCard({ color, img, title, children }) {
             <Card className='bg-white cardAnimationUp'>
                 <CardBody>
                     <div
-                        className={`p-3 text-center inline-flex items-center justify-center w-32 mb-5 shadow-md rounded-full ${colors[color]}`}
+                        className= "text-center inline-flex items-center justify-center mb-5 "
                     >
-                        <Image className='iconAnimation' src={img} alt="card" raised='true' />
+                        <Image height={150} width={200} className='iconAnimation' src={img} alt="card" raised='true' />
                     </div>
                     <H6 color="gray">{title}</H6>
                     <Paragraph color="blueGray">{children}</Paragraph>

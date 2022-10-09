@@ -26,7 +26,7 @@ export default function ArrowUp() {
     <div ref={arrowRef} className="hover:scale-110 fixed bottom-4 right-4 arrowDisplay z-30">
       <Link href="#header">
         <a>
-          <Image width={30} height={30} src={arrowUp} alt="up" />
+          <Image width={25} height={25} src={arrowUp} alt="up" />
         </a>
       </Link>
     </div>
