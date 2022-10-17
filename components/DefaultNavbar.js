@@ -28,36 +28,36 @@ export default function DefaultNavbar() {
   return (
     <div
       ref={navBar}
-      className="navBar fixed top-0 left-0 right-0 navbarAnimation flex justify-between"
+      className="navBar py-2 fixed top-0 left-0 right-0 navbarAnimation flex justify-between"
     >
       <Link href="/">
-        <a className="titleLogo font-bold text-gray-200 mx-4 mt-2 text-3xl float-left flex">
-          LocalHost
+        <a className="titleLogo font-medium text-gray-200 mx-4 mt-2 text-2xl float-left flex">
+          <div className="text-cyan-600 font-extrabold">L</div> ocalHost
         </a>
       </Link>
 
-      <nav ref={topnav} className="topnav">
+      <nav ref={topnav} className="topnav ">
     
         <Link href="#exito">
-          <a onClick={toggleMenu} className="" rel="noreferrer">
-            <h6 className="">Proyectos Exitosos</h6>
+          <a onClick={toggleMenu} className="hover:text-cyan-500" rel="noreferrer">
+            <div className=" text-sm">Proyectos Exitosos</div>
           </a>
         </Link>
 
         <Link href="#servicios">
-          <a onClick={toggleMenu} className="" rel="noreferrer">
-            <h6 className="">Servicios</h6>
+          <a onClick={toggleMenu} className="hover:text-cyan-500" rel="noreferrer">
+            <div className="text-sm ">Servicios</div>
           </a>
         </Link>
   
         <Link href="#about">
-          <a onClick={toggleMenu} className="" rel="noreferrer">
-            <h6 className="">Sobre Nosotros</h6>
+          <a onClick={toggleMenu} className="hover:text-cyan-500" rel="noreferrer">
+            <div className=" text-sm">Sobre Nosotros</div>
           </a>
         </Link>
         <Link href="#contacto">
-          <a onClick={toggleMenu} className="" rel="noreferrer">
-            <h6 className="">Contacto</h6>
+          <a onClick={toggleMenu} className="hover:text-cyan-500" rel="noreferrer">
+            <div className=" text-sm">Contacto</div>
           </a>
         </Link>
       </nav>

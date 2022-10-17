@@ -1,4 +1,3 @@
-
 import Button from "@material-tailwind/react/Button";
 import H4 from "@material-tailwind/react/Heading4";
 import LeadText from "@material-tailwind/react/LeadText";
@@ -11,8 +10,6 @@ export default function Form() {
     mensaje: "",
   });
 
-
-
   const captureValues = (e) => {
     setMensaje({
       ...mensaje,
@@ -20,22 +17,21 @@ export default function Form() {
     });
   };
 
-  const sendMessage = async(e) =>{
-    e.preventDefault()
-    const rawResponse = await fetch('https://formspree.io/f/moqbebvn', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(mensaje)
-  });
-  const content = await rawResponse.json();
-
-  }
+  const sendMessage = async (e) => {
+    e.preventDefault();
+    const rawResponse = await fetch("https://formspree.io/f/moqbebvn", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(mensaje),
+    });
+    const content = await rawResponse.json();
+  };
 
   return (
-    <section id="contacto" className=" mx-5 pt-20 pb-48">
+    <section id="contacto" className="bg-gray-200 mx-5 pt-20 pb-48">
       <div className="flex flex-wrap mt-4">
         <div className="w-full md:w-4/12 mx-auto">
           <H4 color="black" className="eventAnimation">
@@ -53,59 +49,63 @@ export default function Form() {
           <LeadText color="black">
             Escribenos te contancataremos dentro las 24 horas habiles.
           </LeadText>
-
-         
         </div>
         <div className="boxImagen w-full md:w-5/12  rounded-md px-2 mx-auto flex justify-center mt-24 lg:mt-0">
           <form
             id="formContact"
             onChange={captureValues}
-            className="bg-slate-700 bg-cover bg-center p-3 rounded-md"
+            className="bg-white
+             bg-cover bg-center p-4 rounded-lg"
           >
             <br />
             <div className="flex flex-col gap-3 mb-4">
               <div>
-                <label className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
                   Nombres:
                 </label>
                 <input
                   type="text"
                   name="name"
                   id="inputName"
-                  className="bg-transaparent outline-none mb-2  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent  border-b-2 border-b-cyan-500 outline-none mb-2  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                   placeholder="Nombre completo"
-                  required
+                  requiredcyan
                 />
               </div>
               <div>
-                <label className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label className="block  outline-none  mb-2text-sm font-medium text-gray-700 dark:text-gray-700">
                   Email:
                 </label>
                 <input
                   type="text"
                   name="email"
                   id="inputEmail"
-                  className="bg-transaparent mb-2 outline-none text-gray-800 text-sm rounded-lg  block w-full p-2.5"
-                  placeholder="•••••••••"
+                  className="bg-transaparent border-b-2 border-b-cyan-500 mb-2 outline-none text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  placeholder="Escribe tu correo"
                   required
                 />
               </div>
               <div>
-                <label className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
                   Mensaje:
                 </label>
                 <textarea
-                required
+                  required
                   name="mensaje"
                   rows="4"
                   cols="50"
-                  className="bg-transaparent outline-none  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent  border-b-2 border-b-cyan-500 outline-none  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                 />
               </div>
             </div>
 
             <div className="flex p-2 justify-center">
-              <Button onClick={sendMessage} type='submit' color="teal" ripple="light">
+              <Button
+                onClick={sendMessage}
+                type="submit"
+                color="teal"
+                ripple="light"
+              >
                 Enviar mensaje
               </Button>
             </div>

@@ -34,7 +34,7 @@ export default function WorkingSection() {
         </div>
 
         <div className="flex flex-wrap items-center text-center mt-32">
-          <div className="w-full md:w-5/12  mx-auto ">
+          <div className="w-full md:w-4/12  mx-auto ">
             
             <H4 color="black" className="eventAnimation">
               Equipo de desarrolladores</H4>

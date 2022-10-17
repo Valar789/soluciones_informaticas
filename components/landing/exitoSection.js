@@ -1,6 +1,6 @@
 import Title from 'components/landing/Title';
 import TeamCard from 'components/landing/exitoCard';
-import Image1 from 'public/team-1-800x800.jpg';
+import Image1 from 'public/logo2.png';
 import Image2 from 'public/team-2-800x800.jpg';
 import Image3 from 'public/team-3-800x800.jpg';
 import Image4 from 'public/team-4-470x470.png';

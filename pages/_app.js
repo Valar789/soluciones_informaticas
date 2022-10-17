@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <>
+        <title>LocalHost Web</title>
           <meta name="title" content="LocalHost" />
           <meta
             name="description"
