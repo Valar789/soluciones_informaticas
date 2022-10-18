@@ -1,5 +1,4 @@
-import about from "public/aboutbg.jpg";
-import Image from "next/image";
+ 
 import H4 from "@material-tailwind/react/Heading4";
 import LeadText from "@material-tailwind/react/LeadText";
 import Card from "@material-tailwind/react/Card";
@@ -25,12 +24,12 @@ export default function About() {
             y desarrollar tu empresa o proyecto de manera sorprendente con
             nuestros servicios digitales:
           </LeadText>
-          <div className="text-yellow-800 font-semibold">Diseño de Páginas</div>
-          <div className="text-yellow-800 font-semibold">
+          <div className="text-white font-semibold">Diseño de Páginas</div>
+          <div className="text-white font-semibold">
             Web Desarrollo de Apps Móviles{" "}
           </div>
-          <div className="text-yellow-800 font-semibold">Branding y Diseño</div>
-          <div className="text-yellow-800 font-semibold">
+          <div className="text-white font-semibold">Branding y Diseño</div>
+          <div className="text-white font-semibold">
             Gráfico Marketing Digital y Manejo de Redes Sociales
           </div>
         </div>

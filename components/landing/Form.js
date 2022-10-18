@@ -50,7 +50,7 @@ export default function Form() {
             Escribenos te contancataremos dentro las 24 horas habiles.
           </LeadText>
         </div>
-        <div className="boxImagen w-full md:w-5/12  rounded-md px-2 mx-auto flex justify-center mt-24 lg:mt-0">
+        <div className="boxImagen w-full md:w-5/12  rounded-lg px-2 mx-auto flex justify-center mt-24 lg:mt-0">
           <form
             id="formContact"
             onChange={captureValues}
@@ -67,7 +67,7 @@ export default function Form() {
                   type="text"
                   name="name"
                   id="inputName"
-                  className="bg-transaparent  border-b-2 border-b-cyan-500 outline-none mb-2  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent  border-b-2   border-cyan-500 outline-none mb-2  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                   placeholder="Nombre completo"
                   requiredcyan
                 />
@@ -80,7 +80,7 @@ export default function Form() {
                   type="text"
                   name="email"
                   id="inputEmail"
-                  className="bg-transaparent border-b-2 border-b-cyan-500 mb-2 outline-none text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent border-b-2 border-cyan-500 mb-2 outline-none text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                   placeholder="Escribe tu correo"
                   required
                 />
@@ -94,7 +94,7 @@ export default function Form() {
                   name="mensaje"
                   rows="4"
                   cols="50"
-                  className="bg-transaparent  border-b-2 border-b-cyan-500 outline-none  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent  border-b-2 border-cyan-500 outline-none  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                 />
               </div>
             </div>
