@@ -31,7 +31,7 @@ export default function Form() {
   };
 
   return (
-    <section id="contacto" className="bg-gray-200 mx-5 pt-20 pb-48">
+    <section id="contacto" className="bg-white mx-5 pt-20 pb-48">
       <div className="flex flex-wrap mt-4">
         <div className="w-full md:w-4/12 mx-auto">
           <H4 color="black" className="eventAnimation">

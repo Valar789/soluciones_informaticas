@@ -61,7 +61,7 @@ export default function DefaultNavbar() {
           </a>
         </Link>
       </nav>
-      <a onClick={toggleMenu} className="iconMenu text-white">
+      <a onClick={toggleMenu} className="iconMenu mt-3 text-white">
         <i className="fa fa-bars"></i>
       </a>
     </div>
