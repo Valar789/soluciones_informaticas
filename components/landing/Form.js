@@ -52,6 +52,7 @@ export default function Form() {
         </div>
         <div className="boxImagen w-full md:w-5/12  rounded-lg px-2 mx-auto flex justify-center mt-24 lg:mt-0">
           <form
+          onSubmit={sendMessage}
             id="formContact"
             onChange={captureValues}
             className="bg-white
@@ -67,20 +68,20 @@ export default function Form() {
                   type="text"
                   name="name"
                   id="inputName"
-                  className="bg-transaparent  border-b-2   border-cyan-500 outline-none mb-2  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent  border-b-2   border-blue-500 outline-none mb-2  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                   placeholder="Nombre completo"
-                  requiredcyan
+                  required
                 />
               </div>
               <div>
-                <label className="block  outline-none  mb-2text-sm font-medium text-gray-700 dark:text-gray-700">
+                <label className="block  outline-none  mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
                   Email:
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   id="inputEmail"
-                  className="bg-transaparent border-b-2 border-cyan-500 mb-2 outline-none text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent border-b-2 border-blue-500 mb-2 outline-none text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                   placeholder="Escribe tu correo"
                   required
                 />
@@ -94,16 +95,16 @@ export default function Form() {
                   name="mensaje"
                   rows="4"
                   cols="50"
-                  className="bg-transaparent  border-b-2 border-cyan-500 outline-none  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
+                  className="bg-transaparent  border-b-2 border-blue-500 outline-none  text-gray-800 text-sm rounded-lg  block w-full p-2.5"
                 />
               </div>
             </div>
 
             <div className="flex p-2 justify-center">
               <Button
-                onClick={sendMessage}
+         
                 type="submit"
-                color="teal"
+                color="blue"
                 ripple="light"
               >
                 Enviar mensaje

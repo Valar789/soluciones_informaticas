@@ -1,6 +1,6 @@
 import H6 from "@material-tailwind/react/Heading6";
 import Paragraph from "@material-tailwind/react/Paragraph";
-import Button from "@material-tailwind/react/Button";
+ 
  
 import Image from "next/image";
  
@@ -19,7 +19,7 @@ export default function LandingTeamCard({ img, name, position, url }) {
           <H6 color="gray">{name}</H6>
           <Paragraph color="blueGray">{position}</Paragraph>
           <div className="flex items-center justify-center">
-            <Button className="btn-teal-500" src={url} >Visitar</Button>
+            <a className="text-blue-500" href={url} >Ver sitio</a>
           </div>
         </div>
       </div>
